@@ -1,0 +1,32 @@
+<center>
+<h1> <%= @week.name %> </h1>
+<h2>  <%= @week.date %> <h2> 
+</center>
+
+
+<center><%= link_to "Home", weeks_path, {class: "pure-button pure-button-primary"} %> </center>
+
+<br>
+
+<div id="this-week">
+<%= @week.this_week %> 
+</div> 
+
+<div id="next-week">
+ <%= @week.next_week %> 
+</div>
+
+<div id="office-hours">
+ <%= @week.office_hours %> 
+</div> 
+
+<div id="events">
+<%= @week.events %> 
+</div> 
+
+<div id="resources">
+<%= @week.resources %> 
+</div> 
+
+<center><%= link_to "Edit week", edit_week_path, {class: "pure-button pure-button-primary"} %> </center>
+

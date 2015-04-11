@@ -1,0 +1,69 @@
+<center>
+
+<h1> Add a week! </h1>
+
+
+<!-- Form for adding a new week -->
+<%= form_for @week, html: {class: "pure-form pure-form-stacked"} do |f| %>
+
+<div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :date %>
+    <%= f.text_field :date %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :this_week %><br>
+    <%= f.text_area :this_week %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :next_week %> <br>
+    <%= f.text_area :next_week %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :office_hours %> <br>
+    <%= f.text_area :office_hours %>
+
+<br>
+
+</div>
+    <%= f.label :events %> <br>
+    <%= f.text_area :events %>
+
+<br>
+
+<div>
+    <%= f.label :resources %> <br>
+    <%= f.text_area :resources %>
+</div>
+
+<br>
+
+<%= f.submit "Add week" %>
+<%end%>
+
+<br>
+<%= link_to "Back to Weeks", weeks_path %>
+
+</center>
+
+
+
+
+
+
+
