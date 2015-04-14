@@ -1,0 +1,46 @@
+<hr>
+
+<center>
+<%= form_for @event, html: {class: "pure-form pure-form-stacked"} do |f| %>
+
+<div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :time %><br>
+    <%= f.time_field :time %>
+</div>
+
+<br>
+
+<div>
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+</div>
+
+<div>
+    <%= f.label :url %> <br>
+    <%= f.text_field :url %>
+</div>
+
+<br>
+
+
+<%= f.submit "Save New Event" %>
+<%end%>
+
+<br>
+<%= link_to "Home", weeks_path %>
+
+</center>

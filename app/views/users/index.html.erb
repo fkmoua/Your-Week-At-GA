@@ -1,5 +1,7 @@
 <h1> <center> YOUR TEAM </center></h1>
 
+
+
 <% @users.each do |u| %>
 <%= link_to(u.name, user_path(u), {class: "button-large pure-button"}) %> <br><br>
 <% end %> 

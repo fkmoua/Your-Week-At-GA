@@ -1,0 +1,27 @@
+<hr id="hr">
+
+<% @events.each do |e| %>
+    <div id="one-event">
+        <h1><%= e.name %><br></h1>
+        <%= e.date %><br>
+        <%= e.time %><br>
+        <%= e.location %><br>
+        <%= e.url %>
+
+        <%= link_to "More info", event_path(e) %>
+        <br>
+
+    </div>
+<% end %>
+
+<%= link_to "New Event", new_event_path, {class:"button-secondary pure-button"} %>
+
+<!--   create_table "events", force: :cascade do |t|
+    t.string   "name"
+    t.string   "url"
+    t.date     "date"
+    t.time     "time"
+    t.string   "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end -->

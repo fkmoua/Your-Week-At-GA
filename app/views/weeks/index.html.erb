@@ -1,16 +1,15 @@
-<center><h1> Weekly Recaps </h1></center>
-
-<center>
-<%= link_to "Your Team", users_path, {class: "pure-button pure-button-primary"} %> 
 
 
-</center>
 
 <!-- List of the weeks -->
-
+<hr>
+<center>
+<div>
 <% @weeks.each do |w| %>
 <ul>
-    <li>  <%=  link_to(w.name, week_path(w), {class: "pure-button"} ) %>  (<%= w.date %>)       
+    <li>  <%=  link_to(w.name, week_path(w), {class: "button-xlarge pure-button"} ) %>  
+    <br>
+    (<%= w.date %>)       
     </li>
 
 </ul>
@@ -19,4 +18,8 @@
 
 <!-- List of the weeks -->
 
-<%= link_to "Add New Week", new_week_path, {class: "pure-button pure-button-primary"} %>
+<%= link_to "Add New Week", new_week_path, {class: "button-success pure-button"} %>
+
+</center>
+
+<hr>

@@ -14,7 +14,19 @@ Rails.application.routes.draw do
   get "users/:id/edit" => "users#edit", as: :edit_user
   patch "users/:id" => "users#update"
 
+  get "events/" => "events#index"
+  get "events/new" => "events#new", as: :new_event
+  get "events/:id" => "events#show", as: :event
+  post "events/" => "events#create"
+  get "events/:id/edit" => "events#edit", as: :edit_event
+  patch "events/:id" => "events#update"
 
+  get "resources/" => "resources#index"
+  get "resources/new" => "resources#new", as: :new_resource
+  get "resources/:id" => "resources#show", as: :resource
+  post "resources/" => "resources#create"
+  get "resources/:id/edit" => "resources#edit", as: :edit_resource
+  patch "resources/:id" => "resources#update"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

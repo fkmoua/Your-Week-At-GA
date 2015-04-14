@@ -1,10 +1,18 @@
-<h1> testing show page</h1>
+<center>
+
+<h1> <%= @user.name %> </h1>
+<%= link_to "Home", weeks_path, {class: "button-secondary pure-button"} %>
+<%= link_to "Your Team", users_path, {class: "button-secondary pure-button"} %> 
+<br>
+<br>
+<br>
 
 
 <%= @user.name %> <br>
 <%= @user.username %> <br>
 <%= @user.email %> <br> <br>
 
-<%= link_to "Home", users_path, {class: "button-large pure-button"} %>
 
 
+
+</center<>

@@ -1,0 +1,16 @@
+<hr id="hr">
+
+<center>
+<div id="one-event">
+    <%= @event.name %>
+    <%= @event.date %>
+    <%= @event.time %>
+    <%= @event.location %>
+    <%= @event.url %>
+
+
+    <br>
+    <br>
+    <%= link_to "Edit Event", edit_event_path %>
+</div>
+</center>

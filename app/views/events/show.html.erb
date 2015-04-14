@@ -1,0 +1,26 @@
+    <center>
+<h1> Events </h1>
+
+<%= link_to "Home", weeks_path, {class: "button-secondary pure-button"} %>
+<%= link_to "Events", events_path, {class: "button-secondary pure-button"} %> 
+<%= link_to "Resources", resources_path, {class: "button-secondary pure-button"} %> 
+<%= link_to "Your Team", users_path, {class: "button-secondary pure-button"} %> 
+
+</center>
+
+<hr id="hr">
+
+<center>
+<div id="one-event">
+    <%= @event.name %>
+    <%= @event.date %>
+    <%= @event.time %>
+    <%= @event.location %>
+    <%= @event.url %>
+
+
+    <br>
+    <br>
+    <%= link_to "Edit Event", edit_event_path %>
+</div>
+</center>
